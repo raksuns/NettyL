@@ -175,11 +175,15 @@ public class Server {
 	}
 
 	protected Map<String, PipelineModifier> getPipelineModifiers() {
+		
 		Map<String, PipelineModifier> map = new ConcurrentHashMap<String, PipelineModifier>();
+		
 		Set<URL> urls = new HashSet<URL>();
+		
 		for (Iterator<URL> urlIter = ClasspathHelper.forClassLoader().iterator(); urlIter.hasNext();) {
 			URL url = urlIter.next();
 			if (url.toString().toLowerCase().endsWith(".jar") || !url.toString().toLowerCase().contains(".")) {
+				LOG.info("Url : " + url.toString());
 				urls.add(url);
 			}
 		}
@@ -196,9 +200,9 @@ public class Server {
 					for (String name : names) {
 						name = name.trim().toLowerCase();
 						if (map.containsKey(name)) {
-							LOG.warn("The handler [" + pm.getName() + "] offering URI [" + name
-									+ "] could not be registered as that URI is already registered");
-						} else {
+							LOG.warn("The handler [" + pm.getName() + "] offering URI [" + name + "] could not be registered as that URI is already registered");
+						}
+						else {
 							map.put(name, pm);
 						}
 					}

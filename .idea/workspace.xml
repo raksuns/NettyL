@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30fb854f-b3d9-4f16-bb01-20d8a3ecafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-pool-1.5.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/guava-r08.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/helios-native-sigar-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/javassist-3.12.1.GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jedis-2.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/json-20090211.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/json-smart-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/junit-4.8.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/log4j-1.2.16.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/netty-3.5.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/reflections-0.9.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/slf4j-api-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/slf4j-log4j12-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/xml-apis-1.0.b2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/groovyc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NettyL.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="30fb854f-b3d9-4f16-bb01-20d8a3ecafbf" time="1378792542118" ignored="false" />
     <file path="/fragment.java" changelist="30fb854f-b3d9-4f16-bb01-20d8a3ecafbf" time="1378792081158" ignored="false" />
+    <file path="/timeseries.groovy" changelist="30fb854f-b3d9-4f16-bb01-20d8a3ecafbf" time="1378861101121" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +81,7 @@
       <file leaf-file-name="timeseries.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/timeseries.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="41" selection-start="860" selection-end="860" vertical-scroll-proportion="0.65">
+            <state line="45" column="58" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.725">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -156,6 +140,13 @@
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/timeseries.groovy" />
+      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -638,8 +629,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="71" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.49779737">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -655,7 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="249" selection-end="249" vertical-scroll-proportion="0.225">
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/timeseries.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="860" selection-end="860" vertical-scroll-proportion="0.65">
+        <state line="45" column="58" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.725">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

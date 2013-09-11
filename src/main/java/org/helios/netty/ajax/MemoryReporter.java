@@ -34,8 +34,6 @@ import org.json.JSONObject;
 /**
  * <p>Title: MemoryReporter</p>
  * <p>Description: Wakes up every <i>n</i> seconds and broadcasts the heap usage to all channels in the shared channel group</p> 
- * <p>Company: Helios Development Group LLC</p>
- * @author Whitehead (nwhitehead AT heliosdev DOT org)
  * <p><code>org.helios.netty.ajax.MemoryReporter</code></p>
  */
 public class MemoryReporter extends Thread {
