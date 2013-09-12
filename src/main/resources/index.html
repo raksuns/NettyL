@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comet</title>
+</head>
+<body>
+<textarea id="data" style="width:200px;height:330px;"></textarea>
+<script>
+    function appendToArea(msg) {
+        var textArea = document.getElementById('data');
+        textArea.value = textArea.value + msg + '\n';
+        textArea.scrollTop = textArea.scrollHeight;
+    }
+
+    var event = new EventSource('events');
+    event.onopen = function() {
+        appendToArea('OPEN');
+    };
+    event.onmessage = function(event) {
+        appendToArea(event.data);
+    };
+    event.onerror = function() {
+        appendToArea('ERROR');
+    };
+</script>
+</body>
+</html>
