@@ -18,8 +18,7 @@ import org.jboss.netty.handler.codec.http.HttpRequest;
 import org.jboss.netty.handler.codec.http.HttpResponse;
 
 public class RequestHandler extends SimpleChannelUpstreamHandler {
-	private final StringBuilder buf = new StringBuilder(); // The buffer of the
-															// data received.
+	private final StringBuilder buf = new StringBuilder(); // The buffer of the data received.
 	private Queue<RequestDataScope> _queueRequests = new ConcurrentLinkedQueue<RequestDataScope>();
 	private Thread _worker;
 
@@ -49,7 +48,6 @@ public class RequestHandler extends SimpleChannelUpstreamHandler {
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e)
 			throws Exception {
-		// TODO:
 		e.getCause().printStackTrace();
 		e.getChannel().close();
 	}
@@ -68,7 +66,8 @@ public class RequestHandler extends SimpleChannelUpstreamHandler {
 						process.transmit(buff.toString());
 					}
 					Thread.currentThread().sleep(10000); // long sleep here
-				} catch (Exception e) {
+				}
+				catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
@@ -83,9 +82,7 @@ public class RequestHandler extends SimpleChannelUpstreamHandler {
 				buff.append(str);
 				read = stream.read(bytes, 0, bytes.length);
 			}
-
 			return buff;
 		}
-
 	}
 }
